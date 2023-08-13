@@ -1,0 +1,12 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.0
+
+Layout/EndOfLine:
+  EnforcedStyle: lf
+
+Layout/LineLength:
+  Max: 120
+
+Style/Documentation:
+  Enabled: false
