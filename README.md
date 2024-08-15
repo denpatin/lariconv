@@ -3,6 +3,8 @@
 
 [![Gem Version](https://badge.fury.io/rb/lariconv.svg)](https://badge.fury.io/rb/lariconv)
 
+[![Build Status](https://github.com/denpatin/lariconv/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/denpatin/lariconv/actions/workflows/ci.yml)
+
 Gem to convert different currencies to Georgian Lari based on
 the National Bank of Georgia's exchange rate for a given date.
 
@@ -30,4 +32,4 @@ Lariconv.convert(amount: 1000, currency: 'WTF')
 
 ## Copyright
 
-Copyright (c) 2023 Den Patin. See LICENSE for details.
+Copyright (c) 2023-2024 Den Patin. See LICENSE for details.

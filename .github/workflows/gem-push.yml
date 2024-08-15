@@ -1,0 +1,63 @@
+name: Ruby Gem
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3.4
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Run linters
+        run: bundle exec rubocop
+
+  test:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3.4
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Run tests
+        run: bundle exec rspec
+
+  push:
+    name: Push gem to RubyGems.org
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          ruby-version: ruby
+
+      - uses: rubygems/release-gem@v1

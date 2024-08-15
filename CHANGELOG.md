@@ -1,6 +1,11 @@
 `lariconv` changelog
 ====================
 
+## 0.2.0.1 (August 16, 2024)
+
+* Upgrade Ruby
+* Add specs
+
 ## 0.2.0 (August 15, 2023)
 
 * Change `Lariconv#convert` signature
