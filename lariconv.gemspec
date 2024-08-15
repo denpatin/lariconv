@@ -2,9 +2,9 @@
 
 Gem::Specification.new do |s|
   s.name = 'lariconv'
-  s.version = '0.2.0'
+  s.version = '0.2.0.1'
   s.platform = Gem::Platform::RUBY
-  s.required_ruby_version = '>= 3.0.0'
+  s.required_ruby_version = '>= 3.3.4'
   s.author = 'Den Patin'
   s.email = 'den@hey.com'
   s.homepage = 'https://github.com/denpatin/lariconv'
@@ -23,5 +23,5 @@ Gem::Specification.new do |s|
 
   s.files = 'lib/lariconv.rb', 'README.md', 'LICENSE', 'CHANGELOG.md'
 
-  s.add_development_dependency 'rspec', '~> 3.12'
+  s.add_dependency 'bigdecimal'
 end

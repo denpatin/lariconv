@@ -1,12 +1,9 @@
 AllCops:
+  Include:
+    - 'lib/**/*'
   NewCops: enable
-  TargetRubyVersion: 3.0
-
-Layout/EndOfLine:
-  EnforcedStyle: lf
-
-Layout/LineLength:
-  Max: 120
+  TargetRubyVersion: 3.3
+  SuggestExtensions: false
 
 Style/Documentation:
   Enabled: false
