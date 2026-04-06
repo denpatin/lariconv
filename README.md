@@ -30,4 +30,4 @@ Lariconv.convert(amount: 1000, currency: 'WTF')
 
 ## Copyright
 
-Copyright (c) 2023 Den Patin. See LICENSE for details.
+Copyright (c) 2023-2026 Den Patin. See LICENSE for details.

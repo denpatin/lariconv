@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = 'lariconv'
-  s.version = '0.2.0'
+  s.version = '0.3.0'
   s.platform = Gem::Platform::RUBY
-  s.required_ruby_version = '>= 3.0.0'
+  s.required_ruby_version = '>= 4.0.0'
   s.author = 'Den Patin'
-  s.email = 'den@hey.com'
+  s.email = 'hi@dpat.in'
   s.homepage = 'https://github.com/denpatin/lariconv'
   s.summary = 'World currencies to Georgian Lari converter'
   s.description = <<-DESC
